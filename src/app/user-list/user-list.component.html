@@ -1,0 +1,24 @@
+<table class="table table-striped">
+  <thead>
+    <tr>
+      <th scope="col">Username</th>
+      <th scope="col">First Name</th>
+      <th scope="col">Last Name</th>
+      <th scope="col">Phone</th>
+      <th scope="col">E-mail</th>
+      <th scope="col">Reviewer?</th>
+      <th scope="col">Admin?</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr *ngFor="let user of users">
+      <td>{{ user.username }}</td>
+      <td>{{ user.firstName }}</td>
+      <td>{{ user.lastName }}</td>
+      <td>{{ user.phone }}</td>
+      <td>{{ user.email }}</td>
+      <td>{{ user.reviewer }}</td>
+      <td>{{ user.admin }}</td>
+    </tr>
+  </tbody>
+</table>
