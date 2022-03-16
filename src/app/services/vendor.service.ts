@@ -20,4 +20,10 @@ export class VendorService {
     let requestUrl = this.url + '/'
     return this.http.get<Vendor[]>(requestUrl)
   }
+
+  // http://localhost:8080/vendors/{id}
+  getById(id: number): Observable<Vendor[]> {
+    let requestUrl = this.url + '/' + id
+    return this.http.get<Vendor[]>(requestUrl)
+  }
 }

@@ -10,6 +10,7 @@ import { NgbModule } from '@ng-bootstrap/ng-bootstrap';
 import { UserDetailComponent } from './features/user-detail/user-detail.component';
 import { FormsModule } from '@angular/forms';
 import { VendorListComponent } from './features/vendor-list/vendor-list.component';
+import { VendorDetailComponent } from './features/vendor-detail/vendor-detail.component';
 
 @NgModule({
   declarations: [
@@ -17,7 +18,8 @@ import { VendorListComponent } from './features/vendor-list/vendor-list.componen
     AboutComponent,
     UserListComponent,
     UserDetailComponent,
-    VendorListComponent
+    VendorListComponent,
+    VendorDetailComponent
   ],
   imports: [
     BrowserModule,
