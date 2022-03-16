@@ -12,14 +12,14 @@ const userRoute = "/users"
 })
 export class UserService {
 
-  url = environment.apiBaseUrl + userRoute
+  private url = environment.apiBaseUrl + userRoute
 
   constructor(private http: HttpClient) { }
 
   // http://localhost:8080/users/
   getAll(): Observable<User[]> {
     let requestUrl = this.url + '/'
-    return this.http.get<User[]>('http://localhost:8080/users/')
+    return this.http.get<User[]>(requestUrl)
   }
 
   // http://localhost:8080/users/{id}

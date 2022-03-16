@@ -1,0 +1,20 @@
+<table class="table table-striped">
+  <thead>
+    <tr>
+      <th scope="col">Code</th>
+      <th scope="col">Name</th>
+      <th scope="col">Address</th>
+      <th scope="col">Phone</th>
+      <th scope="col">E-mail</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr *ngFor="let vendor of vendors">
+      <td>{{ vendor.code }}</td>
+      <td>{{ vendor.name }}</td>
+      <td>{{ vendor.address }}, {{ vendor.city }}, {{ vendor.state }} {{ vendor.zip }}</td>
+      <td>{{ vendor.phone }}</td>
+      <td>{{ vendor.email }}</td>
+    </tr>
+  </tbody>
+</table>
