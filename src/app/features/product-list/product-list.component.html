@@ -1,0 +1,20 @@
+<table class="table table-striped">
+  <thead>
+    <tr>
+      <th scope="col">Name</th>
+      <th scope="col">Part Number</th>
+      <th scope="col">Price</th>
+      <th scope="col">Vendor</th>
+      <th scope="col">Unit</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr *ngFor="let product of products">
+      <td>{{ product.name }}</td>
+      <td>{{ product.partNumber }}</td>
+      <td>{{ product.price | currency }}</td>
+      <td>{{ product.vendor.name }}</td>
+      <td>{{ product.unit }}</td>
+    </tr>
+  </tbody>
+</table>
