@@ -9,13 +9,15 @@ import { UserListComponent } from './features/user-list/user-list.component';
 import { NgbModule } from '@ng-bootstrap/ng-bootstrap';
 import { UserDetailComponent } from './features/user-detail/user-detail.component';
 import { FormsModule } from '@angular/forms';
+import { VendorListComponent } from './features/vendor-list/vendor-list.component';
 
 @NgModule({
   declarations: [
     AppComponent,
     AboutComponent,
     UserListComponent,
-    UserDetailComponent
+    UserDetailComponent,
+    VendorListComponent
   ],
   imports: [
     BrowserModule,
