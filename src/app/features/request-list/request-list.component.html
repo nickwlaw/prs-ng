@@ -1,0 +1,24 @@
+<table class="table table-striped">
+  <thead>
+    <tr>
+      <th scope="col">User</th>
+      <th scope="col">Description</th>
+      <th scope="col">Date Submitted</th>
+      <th scope="col">Date Needed</th>
+      <th scope="col">Total</th>
+      <th scope="col">Status</th>
+      <th scope="col">Actions</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr *ngFor="let request of requests">
+      <td>{{ request.user.lastName }}, {{request.user.firstName }}</td>
+      <td>{{ request.description }}</td>
+      <td>{{ request.submittedDate | date }}</td>
+      <td>{{ request.dateNeeded | date }}</td>
+      <td>{{ request.total | currency }}</td>
+      <td>{{ request.status }}</td>
+      <td><a routerLink="/request/detail/{{ request.id }}">Details</a></td>
+    </tr>
+  </tbody>
+</table>
