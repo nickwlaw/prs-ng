@@ -3,6 +3,7 @@ import { RouterModule, Routes } from '@angular/router';
 import { AboutComponent } from './features/about/about.component';
 import { ProductDetailComponent } from './features/product-detail/product-detail.component';
 import { ProductListComponent } from './features/product-list/product-list.component';
+import { RequestListComponent } from './features/request-list/request-list.component';
 import { UserDetailComponent } from './features/user-detail/user-detail.component';
 import { UserListComponent } from './features/user-list/user-list.component';
 import { VendorDetailComponent } from './features/vendor-detail/vendor-detail.component';
@@ -16,6 +17,7 @@ const routes: Routes = [
   { path: 'vendor/detail/:id', component: VendorDetailComponent },
   { path: 'product/list', component: ProductListComponent },
   { path: 'product/detail/:id', component: ProductDetailComponent },
+  { path: 'request/list', component: RequestListComponent },
   { path: '**', component: AboutComponent }
 ];
 

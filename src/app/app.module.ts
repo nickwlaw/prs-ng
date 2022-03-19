@@ -14,6 +14,7 @@ import { VendorDetailComponent } from './features/vendor-detail/vendor-detail.co
 import { ProductListComponent } from './features/product-list/product-list.component';
 import { ProductDetailComponent } from './features/product-detail/product-detail.component';
 import { MenuComponent } from './core/menu/menu.component';
+import { RequestListComponent } from './features/request-list/request-list.component';
 
 @NgModule({
   declarations: [
@@ -25,7 +26,8 @@ import { MenuComponent } from './core/menu/menu.component';
     VendorDetailComponent,
     ProductListComponent,
     ProductDetailComponent,
-    MenuComponent
+    MenuComponent,
+    RequestListComponent
   ],
   imports: [
     BrowserModule,
