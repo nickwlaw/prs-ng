@@ -15,6 +15,7 @@ import { ProductListComponent } from './features/product-list/product-list.compo
 import { ProductDetailComponent } from './features/product-detail/product-detail.component';
 import { MenuComponent } from './core/menu/menu.component';
 import { RequestListComponent } from './features/request-list/request-list.component';
+import { UserCreateComponent } from './features/user-create/user-create.component';
 
 @NgModule({
   declarations: [
@@ -27,7 +28,8 @@ import { RequestListComponent } from './features/request-list/request-list.compo
     ProductListComponent,
     ProductDetailComponent,
     MenuComponent,
-    RequestListComponent
+    RequestListComponent,
+    UserCreateComponent
   ],
   imports: [
     BrowserModule,

@@ -1,0 +1,48 @@
+<div class="form-group row">
+  <label class="col-form-label col-sm-2" for="username">Username:</label>
+  <input class="form-control col-sm-6" [(ngModel)]='user.username' type="text" name="Username" id="username"
+    placeholder="Username">
+</div>
+
+<div class="form-group row">
+  <label class="col-form-label col-sm-2" for="password">Password:</label>
+  <input class="form-control col-sm-6" [(ngModel)]='user.password' type="password" name="Password" id="password"
+    placeholder="Password">
+</div>
+
+<div class="form-group row">
+  <label class="col-form-label col-sm-2" for="firstName">First Name:</label>
+  <input class="form-control col-sm-6" [(ngModel)]='user.firstName' type="text" name="FirstName" id="firstName"
+    placeholder="First Name">
+</div>
+
+<div class="form-group row">
+  <label class="col-form-label col-sm-2" for="lastName">Last Name:</label>
+  <input class="form-control col-sm-6" [(ngModel)]='user.lastName' type="text" name="LastName" id="lastName"
+    placeholder="Last Name">
+</div>
+
+<div class="form-group row">
+  <label class="col-form-label col-sm-2" for="phone">Phone Number:</label>
+  <input class="form-control col-sm-6" [(ngModel)]='user.phone' type="text" name="Phone" id="phone"
+    placeholder="Phone Number">
+</div>
+
+<div class="form-group row">
+  <label class="col-form-label col-sm-2" for="email">Email:</label>
+  <input class="form-control col-sm-6" [(ngModel)]='user.email' type="text" name="Email" id="email" placeholder="Email">
+</div>
+
+<div class="form-group row">
+  <label class="col-form-label col-sm-2" for="reviewer">Reviewer:</label>
+  <input class="form-control col-sm-6" [(ngModel)]='user.reviewer' type="checkbox" name="Reviewer" id="reviewer"
+    placeholder="Reviewer">
+</div>
+
+<div class="form-group row">
+  <label class="col-form-label col-sm-2" for="admin">Admin:</label>
+  <input class="form-control col-sm-6" [(ngModel)]='user.admin' type="checkbox" name="Admin" id="admin"
+    placeholder="Admin">
+</div>
+
+<button type="button" class="btn btn-primary" (click)="createUser()">Create</button>
