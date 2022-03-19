@@ -27,4 +27,9 @@ export class UserService {
     let requestUrl = this.url + '/' + id
     return this.http.get<User[]>(requestUrl)
   }
+
+  // http://localhost:8080/users"
+  createUser(user: User): Observable<User[]> {
+    return this.http.post<User[]>(this.url, user)
+  }
 }
