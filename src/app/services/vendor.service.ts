@@ -26,4 +26,9 @@ export class VendorService {
     let requestUrl = this.url + '/' + id
     return this.http.get<Vendor[]>(requestUrl)
   }
+
+  // http://localhost:8080/vendors"
+  createVendor(vendor: Vendor): Observable<Vendor[]> {
+    return this.http.post<Vendor[]>(this.url, vendor)
+  }
 }
