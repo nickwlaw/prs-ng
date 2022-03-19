@@ -12,6 +12,8 @@ import { FormsModule } from '@angular/forms';
 import { VendorListComponent } from './features/vendor-list/vendor-list.component';
 import { VendorDetailComponent } from './features/vendor-detail/vendor-detail.component';
 import { ProductListComponent } from './features/product-list/product-list.component';
+import { ProductDetailComponent } from './features/product-detail/product-detail.component';
+import { MenuComponent } from './core/menu/menu.component';
 
 @NgModule({
   declarations: [
@@ -21,7 +23,9 @@ import { ProductListComponent } from './features/product-list/product-list.compo
     UserDetailComponent,
     VendorListComponent,
     VendorDetailComponent,
-    ProductListComponent
+    ProductListComponent,
+    ProductDetailComponent,
+    MenuComponent
   ],
   imports: [
     BrowserModule,

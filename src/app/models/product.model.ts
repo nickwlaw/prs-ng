@@ -1,5 +1,7 @@
 import { Vendor } from "./vendor.model";
 
+// const DEFAULT_PHOTO_PATH = '../../assets/reamofpaper.jpeg'
+
 export class Product {
   id: number;
   vendor: Vendor;

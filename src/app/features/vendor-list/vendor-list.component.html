@@ -6,6 +6,7 @@
       <th scope="col">Address</th>
       <th scope="col">Phone</th>
       <th scope="col">E-mail</th>
+      <th scope="col">Actions</th>
     </tr>
   </thead>
   <tbody>
@@ -15,6 +16,7 @@
       <td>{{ vendor.address }}, {{ vendor.city }}, {{ vendor.state }} {{ vendor.zip }}</td>
       <td>{{ vendor.phone }}</td>
       <td>{{ vendor.email }}</td>
+      <td><a routerLink="/vendor/detail/{{ vendor.id }}">Details</a></td>
     </tr>
   </tbody>
 </table>

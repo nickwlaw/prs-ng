@@ -6,6 +6,7 @@
       <th scope="col">Price</th>
       <th scope="col">Vendor</th>
       <th scope="col">Unit</th>
+      <th scope="col">Actions</th>
     </tr>
   </thead>
   <tbody>
@@ -15,6 +16,7 @@
       <td>{{ product.price | currency }}</td>
       <td>{{ product.vendor.name }}</td>
       <td>{{ product.unit }}</td>
+      <td><a routerLink="/product/detail/{{ product.id }}">Details</a></td>
     </tr>
   </tbody>
 </table>
