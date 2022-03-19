@@ -1,0 +1,36 @@
+<div class="form-group row">
+  <label class="col-form-label col-sm-2" for="name">Name:</label>
+  <input class="form-control col-sm-6" [(ngModel)]='product.name' type="text" name="Name" id="name" placeholder="Name"
+    disabled>
+</div>
+
+<div class="form-group row">
+  <label class="col-form-label col-sm-2" for="partNumber">Part Number:</label>
+  <input class="form-control col-sm-6" [(ngModel)]='product.partNumber' type="text" name="PartNumber" id="partNumber"
+    placeholder="Part Number" disabled>
+</div>
+
+<div class="form-group row">
+  <label class="col-form-label col-sm-2" for="price">Price:</label>
+  <input class="form-control col-sm-6" [ngModel]='product.price | currency' (ngModelChange)="product.price=$event"
+    type="text" name="Price" id="price" placeholder="Price" disabled>
+</div>
+
+<div class="form-group row">
+  <label class="col-form-label col-sm-2" for="vendor">Vendor:</label>
+  <input class="form-control col-sm-6" [(ngModel)]='product.vendor.name' type="select" name="Vendor" id="vendor"
+    placeholder="Vendor" disabled>
+</div>
+
+<div class="form-group row">
+  <label class="col-form-label col-sm-2" for="unit">Unit:</label>
+  <input class="form-control col-sm-6" [(ngModel)]='product.unit' type="text" name="Unit" id="unit" placeholder="Unit"
+    disabled>
+</div>
+
+<div>
+  <img title='Product Image' [alt]="product.name" [src]="product.photoPath">
+</div>
+
+<button type="button" class="btn btn-primary">Edit</button>
+<button type="button" class="btn btn-danger">Delete</button>

@@ -8,6 +8,7 @@
       <th scope="col">E-mail</th>
       <th scope="col">Reviewer?</th>
       <th scope="col">Admin?</th>
+      <th scope="col">Actions</th>
     </tr>
   </thead>
   <tbody>
@@ -19,6 +20,7 @@
       <td>{{ user.email }}</td>
       <td>{{ user.reviewer }}</td>
       <td>{{ user.admin }}</td>
+      <td><a routerLink="/user/detail/{{ user.id }}">Details</a></td>
     </tr>
   </tbody>
 </table>
