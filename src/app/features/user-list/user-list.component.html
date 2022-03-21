@@ -21,7 +21,10 @@
       <td>{{ user.email }}</td>
       <td>{{ user.reviewer }}</td>
       <td>{{ user.admin }}</td>
-      <td><a routerLink="/user/detail/{{ user.id }}">Details</a></td>
+      <td>
+        <a routerLink="/user/detail/{{ user.id }}">Details</a> | <a routerLink="/user/list"
+          (click)="deleteUser(user.id)">Delete</a>
+      </td>
     </tr>
   </tbody>
 </table>
