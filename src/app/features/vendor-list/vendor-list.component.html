@@ -17,7 +17,8 @@
       <td>{{ vendor.address }}, {{ vendor.city }}, {{ vendor.state }} {{ vendor.zip }}</td>
       <td>{{ vendor.phone }}</td>
       <td>{{ vendor.email }}</td>
-      <td><a routerLink="/vendor/detail/{{ vendor.id }}">Details</a></td>
+      <td><a routerLink="/vendor/detail/{{ vendor.id }}">Details | </a><a routerLink="/vendor/list"
+          (click)="deleteVendor(vendor.id)">Delete</a></td>
     </tr>
   </tbody>
 </table>
