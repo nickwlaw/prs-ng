@@ -25,4 +25,9 @@ export class ProductService {
     let requestUrl = this.url + '/' + id
     return this.http.get<Product[]>(requestUrl)
   }
+
+  // http://localhost:8080/products"
+  createProduct(product: Product): Observable<Product[]> {
+    return this.http.post<Product[]>(this.url, product)
+  }
 }

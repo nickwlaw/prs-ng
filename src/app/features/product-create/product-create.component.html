@@ -1,0 +1,30 @@
+<div class="form-group row">
+  <label class="col-form-label col-sm-2" for="name">Name:</label>
+  <input class="form-control col-sm-6" [(ngModel)]='product.name' type="text" name="Name" id="name" placeholder="Name">
+</div>
+
+<div class="form-group row">
+  <label class="col-form-label col-sm-2" for="partNumber">Part Number:</label>
+  <input class="form-control col-sm-6" [(ngModel)]='product.partNumber' type="text" name="PartNumber" id="partNumber"
+    placeholder="Part Number">
+</div>
+
+<div class="form-group row">
+  <label class="col-form-label col-sm-2" for="price">Price:</label>
+  <input class="form-control col-sm-6" [(ngModel)]='product.price' type="text" name="Price" id="price"
+    placeholder="Price">
+</div>
+
+<div class="form-group row">
+  <label class="col-form-label col-sm-2" for="vendor">Vendor:</label>
+  <select [(ngModel)]='product.vendor' class="form-control col-sm-6" id="vendor" name="Vendor">
+    <option *ngFor="let vendor of vendors" [ngValue]='vendor'>{{ vendor.name }}</option>
+  </select>
+</div>
+
+<div class="form-group row">
+  <label class="col-form-label col-sm-2" for="unit">Unit:</label>
+  <input class="form-control col-sm-6" [(ngModel)]='product.unit' type="text" name="Unit" id="unit" placeholder="Unit">
+</div>
+
+<button type="button" class="btn btn-primary" (click)="createProduct()">Create Product</button>
