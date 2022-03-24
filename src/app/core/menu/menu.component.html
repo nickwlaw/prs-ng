@@ -15,5 +15,8 @@
     <li class="nav-item">
       <a class="nav-link" routerLink="/request/list">Requests</a>
     </li>
+    <li *ngIf="user">
+      Hello, {{ user.firstName }}
+    </li>
   </ul>
 </nav>

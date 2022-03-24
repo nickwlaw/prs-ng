@@ -43,4 +43,10 @@ export class UserService {
     let requestUrl = this.url + '/' + id
     return this.http.delete<User[]>(requestUrl)
   }
+
+  // http://localhost:8080/users/authenticate
+  authenticate(user: User): Observable<User[]> {
+    let requestUrl = this.url + '/authenticate'
+    return this.http.post<User[]>(requestUrl, user)
+  }
 }

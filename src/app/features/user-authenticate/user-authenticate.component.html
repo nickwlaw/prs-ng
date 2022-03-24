@@ -1,0 +1,13 @@
+<div class="form-group row">
+  <label class="col-form-label col-sm-2" for="username">Username:</label>
+  <input class="form-control col-sm-6" [(ngModel)]='user.username' type="text" name="Username" id="username"
+    placeholder="Username">
+</div>
+
+<div class="form-group row">
+  <label class="col-form-label col-sm-2" for="password">Password:</label>
+  <input class="form-control col-sm-6" [(ngModel)]='user.password' type="password" name="Password" id="password"
+    placeholder="Password">
+</div>
+
+<button type="button" class="btn btn-primary" (click)="login()">Login</button>
